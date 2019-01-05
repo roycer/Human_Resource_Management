@@ -183,4 +183,5 @@ return array (
   'productAdded' => 'Producto agregado con éxito.',
   'productUpdated' => 'Producto actualizado con éxito.',
   'productDeleted' => 'Producto eliminado con éxito.',
+  'noTaskCategory' => 'No se ha encontrado ninguna categoría de tarea',
 );

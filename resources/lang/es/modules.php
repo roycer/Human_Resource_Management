@@ -80,6 +80,7 @@ return array (
     'totalTodayAttendance' => 'Asistencia de hoy',
     'newTickets' => 'Nuevos boletos',
     'totalUnpaidInvoices' => 'Total de Facturas Impagas',
+    'totalLeads' => 'Total de Lideres',
   ),
   'emailSettings' => 
   array (
@@ -102,7 +103,7 @@ return array (
     'expenseStatus' => 'Estado de gastos modificado',
     'ticketRequest' => 'Solicitud de nuevo ticket de soporte',
     'mailFromEmail' => 'Correo electrónico',
-    'leaveRequest' => 'Solicitud de licencia recibida',
+    'leaveRequest' => 'Solicitud de Licencia Recibida',
     'taskComplete' => 'Tarea terminada',
   ),
   'employees' => 
@@ -115,7 +116,7 @@ return array (
     'employeeName' => 'Nombre de Empleado',
     'employeePassword' => 'Contraseña',
     'endTime' => 'Hora de finalización',
-    'fullName' => 'Nombre completo',
+    'fullName' => 'Nombre Completo',
     'hourlyRate' => 'Tarifa por Hora',
     'hoursLogged' => 'Horas registradas',
     'jobTitle' => 'Título Profesional',
@@ -130,6 +131,7 @@ return array (
     'slackUsername' => 'Nombre de Usuario Slack',
     'joiningDate' => 'Dia de Ingreso',
     'gender' => 'Género',
+    'title' => 'Empleado',
   ),
   'financeReport' => 
   array (
@@ -199,7 +201,7 @@ return array (
   ),
   'messages' => 
   array (
-    'chooseMember' => 'Hora de inicio',
+    'chooseMember' => 'Escoger Supervisor',
     'message' => 'Mensaje',
     'searchContact' => 'Búsqueda Contacto',
     'send' => 'Enviar',
@@ -265,10 +267,10 @@ return array (
     'startDate' => 'Fecha de inicio',
     'updateTitle' => 'Actualizar detalles del proyecto',
     'uploadFile' => 'Subir archivo',
-    'whoWorking' => 'Subir archivo',
+    'whoWorking' => 'Quien esta Trabajando',
     'noOpenTasks' => 'No hay tareas abiertas.',
     'calculateTasksProgress' => 'Calcular el progreso a través de las tareas',
-    'viewGanttChart' => 'diagrama de Gantt',
+    'viewGanttChart' => 'Diagrama de Gantt',
     'clientViewTask' => 'El cliente puede ver las tareas de este proyecto',
     'manualTimelog' => 'Permitir registros de tiempo manual?',
   ),
@@ -310,6 +312,7 @@ return array (
     'tasksTable' => 'Tabla de tareas',
     'subTask' => 'Sub Tarea',
     'comment' => 'comentario',
+    'taskCategory' => 'Categoría de Tarea',
   ),
   'timeLogReport' => 
   array (
@@ -400,7 +403,7 @@ return array (
   ),
   'tickets' => 
   array (
-    'agents' => 'Agents',
+    'agents' => 'Agentes',
     'assignGroup' => 'Asignar grupo',
     'chooseAgents' => 'Elegir agentes',
     'addGroup' => 'Añadir grupo',
@@ -418,7 +421,7 @@ return array (
     'ticketSubject' => 'Asunto del boleto',
     'ticketDescription' => 'Descripción del boleto',
     'applyTemplate' => 'Aplicar plantilla',
-    'agent' => 'Agent',
+    'agent' => 'Agente',
     'tags' => 'Etiquetas',
     'addChannel' => 'Agregar canal',
     'requesterName' => 'Nombre del Solicitante',
@@ -512,9 +515,9 @@ return array (
   ),
   'leaves' => 
   array (
-    'assignLeave' => 'Asignar licencia',
-    'addLeaveType' => 'Agregar tipo de licencia',
-    'leaveType' => 'Tipo de licencia',
+    'assignLeave' => 'Asignar Licencia',
+    'addLeaveType' => 'Agregar tipo de Licencia',
+    'leaveType' => 'Tipo de Licencia',
     'selectDuration' => 'Seleccionar duración',
     'halfDay' => 'Medio día',
     'hours' => 'horas',
@@ -523,13 +526,23 @@ return array (
     'selectDates' => 'Seleccionar fechas',
     'reason' => 'Motivo de la ausencia',
     'applicantName' => 'Nombre del solicitante',
-    'updateLeave' => 'Actualizar licencia',
+    'updateLeave' => 'Actualizar Licencia',
     'pendingLeaves' => 'Hojas pendientes',
-    'applyLeave' => 'Aplicar licencia',
+    'applyLeave' => 'Aplicar Licencia',
     'noOfLeaves' => 'No de hojas',
     'countLeavesFromDateOfJoining' => 'Contar desde la fecha de ingreso',
     'countLeavesFromStartOfYear' => 'El conteo deja desde el comienzo del año',
     'remainingLeaves' => 'Hojas restantes',
     'leavesTaken' => 'Hojas tomadas',
+  ),
+  'lead' => 
+  array (
+    'addNewLead' => 'Agregar Nuevo Lider',
+  ),
+  'taskCategory' => 
+  array (
+    'addTaskCategory' => 'Añadir Categoría de Tarea',
+    'taskCategory' => 'Categoría de Tarea',
+    'categoryName' => 'Nombre de Categoría',
   ),
 );

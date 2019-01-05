@@ -57,6 +57,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::resource('proposals', 'ProposalController' , ['expect' => ['create']]);
 
         // Holidays
+        Route::get('holidays/calendar-month', 'HolidaysController@getCalendarMonth')->name('holidays.calendar-month');
         Route::get('holidays/mark_sunday', 'HolidaysController@Sunday')->name('holidays.mark-sunday');
         Route::get('holidays/calendar', 'HolidaysController@holidayCalendar')->name('holidays.calendar');
         Route::get('holidays/mark-holiday', 'HolidaysController@markHoliday')->name('holidays.mark-holiday');
@@ -534,6 +535,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
         // Holidays
+        Route::get('holidays/calendar-month', 'MemberHolidaysController@getCalendarMonth')->name('holidays.calendar-month');
         Route::get('holidays/mark_sunday', 'MemberHolidaysController@Sunday')->name('holidays.mark-sunday');
         Route::get('holidays/calendar', 'MemberHolidaysController@holidayCalendar')->name('holidays.calendar');
         Route::get('holidays/mark-holiday', 'MemberHolidaysController@markHoliday')->name('holidays.mark-holiday');
@@ -673,7 +675,7 @@ Route::group(['middleware' => 'auth'], function () {
     });
 
 
-    // Mark all notifications as read
+    // Mark all notifications as readu
     Route::post('mark-notification-read', ['uses' => 'NotificationController@markAllRead'])->name('mark-notification-read');
     Route::get('show-all-member-notifications', ['uses' => 'NotificationController@showAllMemberNotifications'])->name('show-all-member-notifications');
     Route::get('show-all-client-notifications', ['uses' => 'NotificationController@showAllClientNotifications'])->name('show-all-client-notifications');

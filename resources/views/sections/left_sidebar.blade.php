@@ -46,28 +46,8 @@
                 <li><a href="{{ route('admin.leads.index') }}" class="waves-effect"><i class="ti-receipt"></i> <span class="hide-menu"> @lang('app.menu.lead')</span></a>
                 </li>
             @endif
-            @if(\App\ModuleSetting::checkModule('employees'))
-                <li><a href="{{ route('admin.employees.index') }}" class="waves-effect"><i class="ti-user"></i> <span class="hide-menu"> @lang('app.menu.employees') <span class="fa arrow"></span> </span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="{{ route('admin.employees.index') }}">@lang('app.menu.employeeList')</a></li>
-                        <li><a href="{{ route('admin.teams.index') }}">@lang('app.menu.teams')</a></li>
-                    </ul>
-                </li>
-            @endif
-
-            @if(\App\ModuleSetting::checkModule('attendance'))
-                <li><a href="{{ route('admin.attendances.index') }}" class="waves-effect"><i class="icon-clock"></i> <span class="hide-menu">@lang('app.menu.attendance') </span></a> </li>
-            @endif
-            @if(\App\ModuleSetting::checkModule('holidays'))
-                <li><a href="{{ route('admin.holidays.index') }}" class="waves-effect"><i class="ti-calendar"></i> <span class="hide-menu"> @lang('app.menu.holiday')</span></a>
-                </li>
-            @endif
             @if(\App\ModuleSetting::checkModule('projects'))
                 <li><a href="{{ route('admin.projects.index') }}" class="waves-effect"><i class="icon-layers"></i> <span class="hide-menu">@lang('app.menu.projects') </span></a> </li>
-            @endif
-
-            @if(\App\ModuleSetting::checkModule('products'))
-            <li><a href="{{ route('admin.products.index') }}" class="waves-effect"><i class="icon-basket"></i> <span class="hide-menu">@lang('app.menu.products') </span></a> </li>
             @endif
 
             @if(\App\ModuleSetting::checkModule('tasks'))
@@ -79,6 +59,12 @@
                     </ul>
                 </li>
             @endif
+
+
+            @if(\App\ModuleSetting::checkModule('products'))
+                <li><a href="{{ route('admin.products.index') }}" class="waves-effect"><i class="icon-basket"></i> <span class="hide-menu">@lang('app.menu.products') </span></a> </li>
+            @endif
+
 
             @if(\App\ModuleSetting::checkModule('estimates') || \App\ModuleSetting::checkModule('invoices') || \App\ModuleSetting::checkModule('payments') || \App\ModuleSetting::checkModule('expenses') )
                 <li><a href="{{ route('admin.finance.index') }}" class="waves-effect"><i class="fa fa-money"></i> <span class="hide-menu"> @lang('app.menu.finance') @if($unreadExpenseCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif <span class="fa arrow"></span> </span></a>
@@ -109,6 +95,26 @@
             @if(\App\ModuleSetting::checkModule('tickets'))
                 <li><a href="{{ route('admin.tickets.index') }}" class="waves-effect"><i class="ti-ticket"></i> <span class="hide-menu">@lang('app.menu.tickets')</span> @if($unreadTicketCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif</a> </li>
             @endif
+
+
+            @if(\App\ModuleSetting::checkModule('employees'))
+                <li><a href="{{ route('admin.employees.index') }}" class="waves-effect"><i class="ti-user"></i> <span class="hide-menu"> @lang('app.menu.employees') <span class="fa arrow"></span> </span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="{{ route('admin.employees.index') }}">@lang('app.menu.employeeList')</a></li>
+                        <li><a href="{{ route('admin.teams.index') }}">@lang('app.menu.teams')</a></li>
+                    </ul>
+                </li>
+            @endif
+
+
+            @if(\App\ModuleSetting::checkModule('attendance'))
+                <li><a href="{{ route('admin.attendances.index') }}" class="waves-effect"><i class="icon-clock"></i> <span class="hide-menu">@lang('app.menu.attendance') </span></a> </li>
+            @endif
+            @if(\App\ModuleSetting::checkModule('holidays'))
+                <li><a href="{{ route('admin.holidays.index') }}" class="waves-effect"><i class="ti-calendar"></i> <span class="hide-menu"> @lang('app.menu.holiday')</span></a>
+                </li>
+            @endif
+
 
             @if(\App\ModuleSetting::checkModule('messages'))
                 <li><a href="{{ route('admin.user-chat.index') }}" class="waves-effect"><i class="icon-envelope"></i> <span class="hide-menu">@lang('app.menu.messages') @if($unreadMessageCount > 0)<span class="label label-rouded label-custom pull-right">{{ $unreadMessageCount }}</span> @endif</span></a> </li>

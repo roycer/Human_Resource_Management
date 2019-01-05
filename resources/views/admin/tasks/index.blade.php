@@ -115,8 +115,8 @@
                         <thead>
                         <tr>
                             <th>@lang('app.id')</th>
+                            <th>@lang('app.task')</th>
                             <th>@lang('app.project')</th>
-                            <th>@lang('app.title')</th>
                             <th>@lang('modules.tasks.assignTo')</th>
                             <th>@lang('app.dueDate')</th>
                             <th>@lang('app.status')</th>
@@ -263,8 +263,8 @@
             "order": [[0, "desc"]],
             columns: [
                 {data: 'id', name: 'id'},
-                {data: 'project_name', name: 'projects.project_name', width: '20%'},
                 {data: 'heading', name: 'heading', width: '20%'},
+                {data: 'project_name', name: 'projects.project_name', width: '20%'},
                 {data: 'name', name: 'users.name', width: '25%'},
                 {data: 'due_date', name: 'due_date'},
                 {data: 'status', name: 'status'},
