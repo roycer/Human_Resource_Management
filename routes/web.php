@@ -16,8 +16,8 @@ Route::get('/', function () {
 });
 
 // Paypal IPN
-Route::post('verify-ipn', array('as' => 'verify-ipn','uses' => 'PaypalIPNController@verifyIPN'));
-Route::post('/verify-webhook', 'StripeWebhookController@verifyStripeWebhook');
+//Route::post('verify-ipn', array('as' => 'verify-ipn','uses' => 'PaypalIPNController@verifyIPN'));
+//Route::post('/verify-webhook', 'StripeWebhookController@verifyStripeWebhook');
 
 Auth::routes();
 
@@ -684,8 +684,8 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 
-Route::get('verify-purchase', ['uses' => 'PurchaseVerificationController@verifyPurchase'])->name('verify-purchase');
-Route::post('purchase-verified', ['uses' => 'PurchaseVerificationController@purchaseVerified'])->name('purchase-verified');
+//Route::get('verify-purchase', ['uses' => 'PurchaseVerificationController@verifyPurchase'])->name('verify-purchase');
+//Route::post('purchase-verified', ['uses' => 'PurchaseVerificationController@purchaseVerified'])->name('purchase-verified');
 
 
 Route::get('update-database', function(){

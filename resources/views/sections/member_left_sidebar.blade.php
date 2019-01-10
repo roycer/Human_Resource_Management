@@ -61,10 +61,6 @@
             <li><a href="{{ route('member.projects.index') }}" class="waves-effect"><i class="icon-layers"></i> <span class="hide-menu">@lang("app.menu.projects") </span> @if($unreadProjectCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif</a> </li>
             @endif
 
-            @if(\App\ModuleSetting::checkModule('products') && $user->can('view_product'))
-                <li><a href="{{ route('member.products.index') }}" class="waves-effect"><i class="icon-basket"></i> <span class="hide-menu">@lang('app.menu.products') </span></a> </li>
-            @endif
-
             @if(\App\ModuleSetting::checkModule('tasks'))
             <li><a href="{{ route('member.task.index') }}" class="waves-effect"><i class="ti-layout-list-thumb"></i> <span class="hide-menu"> @lang('app.menu.tasks') <span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
@@ -93,37 +89,6 @@
 
             @if(\App\ModuleSetting::checkModule('tickets'))
             <li><a href="{{ route('member.tickets.index') }}" class="waves-effect"><i class="ti-ticket"></i> <span class="hide-menu">@lang("app.menu.tickets") </span></a> </li>
-            @endif
-
-            @if((\App\ModuleSetting::checkModule('estimates') && $user->can('view_estimates'))
-            || (\App\ModuleSetting::checkModule('invoices')  && $user->can('view_invoices'))
-            || (\App\ModuleSetting::checkModule('payments') && $user->can('view_payments'))
-            || (\App\ModuleSetting::checkModule('expenses')))
-            <li><a href="{{ route('member.finance.index') }}" class="waves-effect"><i class="fa fa-money"></i> <span class="hide-menu"> @lang('app.menu.finance') @if($unreadExpenseCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif <span class="fa arrow"></span> </span></a>
-                <ul class="nav nav-second-level">
-                    @if(\App\ModuleSetting::checkModule('estimates'))
-                    @if($user->can('view_estimates'))
-                        <li><a href="{{ route('member.estimates.index') }}">@lang('app.menu.estimates')</a> </li>
-                    @endif
-                    @endif
-
-                    @if(\App\ModuleSetting::checkModule('invoices'))
-                    @if($user->can('view_invoices'))
-                        <li><a href="{{ route('member.all-invoices.index') }}">@lang('app.menu.invoices')</a> </li>
-                    @endif
-                    @endif
-
-                    @if(\App\ModuleSetting::checkModule('payments'))
-                    @if($user->can('view_payments'))
-                        <li><a href="{{ route('member.payments.index') }}">@lang('app.menu.payments')</a> </li>
-                    @endif
-                    @endif
-
-                    @if(\App\ModuleSetting::checkModule('expenses'))
-                        <li><a href="{{ route('member.expenses.index') }}">@lang('app.menu.expenses') @if($unreadExpenseCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif</a> </li>
-                    @endif
-                </ul>
-            </li>
             @endif
 
             @if(\App\ModuleSetting::checkModule('messages'))

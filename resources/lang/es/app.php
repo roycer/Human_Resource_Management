@@ -6,6 +6,7 @@ return array (
   'active' => 'activo',
   'addNew' => 'Añadir Nuevo',
   'address' => 'Dirección',
+  'panel' => 'Panel',
   'adminPanel' => 'Panel de Administrador',
   'apply' => 'Aplicar',
   'back' => 'Espalda',

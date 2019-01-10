@@ -37,6 +37,7 @@ return array (
     'createTitle' => 'Add Client Info',
     'companyDetails' => 'Company Details',
     'companyName' => 'Company Name',
+    'companySede' => 'Sede',
     'website' => 'Website',
     'address' => 'Address',
     'clientDetails' => 'Client Details',

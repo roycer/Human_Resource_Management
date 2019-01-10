@@ -102,6 +102,7 @@
                         <th>@lang('app.id')</th>
                         <th>@lang('app.name')</th>
                         <th>@lang('modules.client.companyName')</th>
+                        <th>@lang('modules.client.companySede')</th>
                         <th>@lang('app.email')</th>
                         <th>@lang('app.status')</th>
                         <th>@lang('app.createdAt')</th>
@@ -194,6 +195,7 @@
                         {data: 'id', name: 'id'},
                         {data: 'name', name: 'name'},
                         {data: 'company_name', name: 'company_name'},
+                        {data: 'sede', name: 'sede'},
                         {data: 'email', name: 'email'},
                         {data: 'status', name: 'status'},
                         {data: 'created_at', name: 'created_at'},

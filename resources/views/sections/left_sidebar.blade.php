@@ -60,34 +60,6 @@
                 </li>
             @endif
 
-
-            @if(\App\ModuleSetting::checkModule('products'))
-                <li><a href="{{ route('admin.products.index') }}" class="waves-effect"><i class="icon-basket"></i> <span class="hide-menu">@lang('app.menu.products') </span></a> </li>
-            @endif
-
-
-            @if(\App\ModuleSetting::checkModule('estimates') || \App\ModuleSetting::checkModule('invoices') || \App\ModuleSetting::checkModule('payments') || \App\ModuleSetting::checkModule('expenses') )
-                <li><a href="{{ route('admin.finance.index') }}" class="waves-effect"><i class="fa fa-money"></i> <span class="hide-menu"> @lang('app.menu.finance') @if($unreadExpenseCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif <span class="fa arrow"></span> </span></a>
-                    <ul class="nav nav-second-level">
-                        @if(\App\ModuleSetting::checkModule('estimates'))
-                            <li><a href="{{ route('admin.estimates.index') }}">@lang('app.menu.estimates')</a> </li>
-                        @endif
-
-                        @if(\App\ModuleSetting::checkModule('invoices'))
-                            <li><a href="{{ route('admin.all-invoices.index') }}">@lang('app.menu.invoices')</a> </li>
-                        @endif
-
-                        @if(\App\ModuleSetting::checkModule('payments'))
-                            <li><a href="{{ route('admin.payments.index') }}">@lang('app.menu.payments')</a> </li>
-                        @endif
-
-                        @if(\App\ModuleSetting::checkModule('expenses'))
-                            <li><a href="{{ route('admin.expenses.index') }}">@lang('app.menu.expenses') @if($unreadExpenseCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif</a> </li>
-                        @endif
-                    </ul>
-                </li>
-            @endif
-
             @if(\App\ModuleSetting::checkModule('timelogs'))
                 <li><a href="{{ route('admin.all-time-logs.index') }}" class="waves-effect"><i class="icon-clock"></i> <span class="hide-menu">@lang('app.menu.timeLogs') </span></a> </li>
             @endif

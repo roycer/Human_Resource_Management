@@ -25,6 +25,7 @@ return array (
     'clientName' => 'Nombre del Cliente',
     'companyDetails' => 'Detalles de la Empresa',
     'companyName' => 'Nombre de la Empresa',
+    'companySede' => 'Sede',
     'createTitle' => 'Agregar Información del Cliente',
     'deadline' => 'Fecha tope',
     'emailNote' => 'El cliente iniciará sesión con este correo electrónico.',
