@@ -39,6 +39,7 @@ return array (
   'menu' => 
   array (
     'accountSettings' => 'Configuración de la empresa',
+    'turn' => 'Turno',
     'clients' => 'Clientes',
     'contacts' => 'el contacto',
     'currencySettings' => 'Configuración de la moneda',

@@ -45,7 +45,7 @@
                 @endif
             @endif
             @if($user->role[1]->role_id == 4)
-                <li><a href="{{ route('admin.clients.index') }}" class="waves-effect"><i class="icon-people"></i> <span class="hide-menu">@lang('app.menu.clients') </span></a> </li>
+                <li><a href="{{ route('admin.clients.index') }}" class="waves-effect"><i class="icon-people"></i> <span class="hide-menu">@lang('app.menu.turn') </span></a> </li>
             @endif
             {{--@if($user->role[1]->role_id != 4)--}}
                 {{--@if(\App\ModuleSetting::checkModule('leads'))--}}

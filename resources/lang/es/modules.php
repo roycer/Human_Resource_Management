@@ -473,6 +473,15 @@ return array (
     'attendanceByMember' => 'Asistencia por miembro',
     'holidays' => 'Vacaciones',
   ),
+  'holiday' =>
+  array(
+      'date' => 'Fecha',
+      'occasion' => 'Ocasión',
+      'day' => 'Día',
+      'action' => 'Acción',
+      'viewOnCalendar' => 'Calendario',
+      'listOf' => 'lista de',
+  ),
   'taskDetail' => 'Detalle de la tarea',
   'customFields' => 
   array (

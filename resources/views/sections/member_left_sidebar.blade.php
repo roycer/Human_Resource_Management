@@ -57,9 +57,9 @@
             @endif
             @endif
 
-            @if(\App\ModuleSetting::checkModule('projects'))
-            <li><a href="{{ route('member.projects.index') }}" class="waves-effect"><i class="icon-layers"></i> <span class="hide-menu">@lang("app.menu.projects") </span> @if($unreadProjectCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif</a> </li>
-            @endif
+            {{--@if(\App\ModuleSetting::checkModule('projects'))--}}
+            {{--<li><a href="{{ route('member.projects.index') }}" class="waves-effect"><i class="icon-layers"></i> <span class="hide-menu">@lang("app.menu.projects") </span> @if($unreadProjectCount > 0) <div class="notify notification-color"><span class="heartbit"></span><span class="point"></span></div>@endif</a> </li>--}}
+            {{--@endif--}}
 
             @if(\App\ModuleSetting::checkModule('tasks'))
             <li><a href="{{ route('member.task.index') }}" class="waves-effect"><i class="ti-layout-list-thumb"></i> <span class="hide-menu"> @lang('app.menu.tasks') <span class="fa arrow"></span> </span></a>
@@ -87,20 +87,20 @@
             <li><a href="{{ route('member.holidays.index') }}" class="waves-effect"><i class="icon-calender"></i> <span class="hide-menu">@lang("app.menu.holiday") </span></a> </li>
             @endif
 
-            @if(\App\ModuleSetting::checkModule('tickets'))
-            <li><a href="{{ route('member.tickets.index') }}" class="waves-effect"><i class="ti-ticket"></i> <span class="hide-menu">@lang("app.menu.tickets") </span></a> </li>
-            @endif
+            {{--@if(\App\ModuleSetting::checkModule('tickets'))--}}
+            {{--<li><a href="{{ route('member.tickets.index') }}" class="waves-effect"><i class="ti-ticket"></i> <span class="hide-menu">@lang("app.menu.tickets") </span></a> </li>--}}
+            {{--@endif--}}
 
-            @if(\App\ModuleSetting::checkModule('messages'))
-            <li><a href="{{ route('member.user-chat.index') }}" class="waves-effect"><i class="icon-envelope"></i> <span class="hide-menu">@lang("app.menu.messages") @if($unreadMessageCount > 0)<span class="label label-rouded label-custom pull-right">{{ $unreadMessageCount }}</span> @endif
-                    </span>
-                </a>
-            </li>
-            @endif
+            {{--@if(\App\ModuleSetting::checkModule('messages'))--}}
+            {{--<li><a href="{{ route('member.user-chat.index') }}" class="waves-effect"><i class="icon-envelope"></i> <span class="hide-menu">@lang("app.menu.messages") @if($unreadMessageCount > 0)<span class="label label-rouded label-custom pull-right">{{ $unreadMessageCount }}</span> @endif--}}
+                    {{--</span>--}}
+                {{--</a>--}}
+            {{--</li>--}}
+            {{--@endif--}}
 
-            @if(\App\ModuleSetting::checkModule('events'))
-            <li><a href="{{ route('member.events.index') }}" class="waves-effect"><i class="icon-calender"></i> <span class="hide-menu">@lang('app.menu.Events')</span></a> </li>
-            @endif
+            {{--@if(\App\ModuleSetting::checkModule('events'))--}}
+            {{--<li><a href="{{ route('member.events.index') }}" class="waves-effect"><i class="icon-calender"></i> <span class="hide-menu">@lang('app.menu.Events')</span></a> </li>--}}
+            {{--@endif--}}
 
             @if(\App\ModuleSetting::checkModule('leaves'))
             <li><a href="{{ route('member.leaves.index') }}" class="waves-effect"><i class="icon-logout"></i> <span class="hide-menu">@lang('app.menu.leaves')</span></a> </li>
