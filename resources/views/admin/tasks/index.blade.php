@@ -94,6 +94,7 @@
                 <h2>@lang('app.menu.tasks')</h2>
 
                 <div class="row">
+                    @if($user->role[1]->role_id != 4)
                     <div class="col-sm-6">
                         <div class="form-group">
                             <a href="{{ route('admin.all-tasks.create') }}" class="btn btn-outline btn-success btn-sm">@lang('modules.tasks.newTask') <i class="fa fa-plus" aria-hidden="true"></i></a>
@@ -102,6 +103,7 @@
 
                         </div>
                     </div>
+                    @endif
                     <div class="col-sm-6 text-right hidden-xs">
                         <div class="form-group">
                             <a href="javascript:;" onclick="exportData()" class="btn btn-info btn-sm"><i class="ti-export" aria-hidden="true"></i> @lang('app.exportExcel')</a>

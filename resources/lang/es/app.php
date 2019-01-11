@@ -32,6 +32,10 @@ return array (
   'loginAsAdmin' => 'Ingresar como administrador',
   'logout' => 'Cerrar sesión',
   'markRead' => 'Marcar como leído',
+  'manage'=>'Administrar',
+  'group' => 'grupo',
+  'to' => 'hasta',
+  'progress' => 'progreso',
   'menu' => 
   array (
     'accountSettings' => 'Configuración de la empresa',

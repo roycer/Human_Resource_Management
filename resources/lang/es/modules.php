@@ -63,6 +63,7 @@ return array (
   array (
     'dueDate' => 'Fecha de vencimiento',
     'overdueTasks' => 'Tareas vencidas',
+    'pendingFollowUp'=> 'Seguimiento Pendiente',
     'pendingClientIssues' => 'Asuntos pendientes',
     'projectActivityTimeline' => 'Línea de tiempo de la actividad del proyecto',
     'recentEarnings' => 'Ganancias Recientes',

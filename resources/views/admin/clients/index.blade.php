@@ -46,7 +46,9 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <a href="{{ route('admin.clients.create') }}" class="btn btn-outline btn-success btn-sm">@lang('modules.client.addNewClient') <i class="fa fa-plus" aria-hidden="true"></i></a>
+                            @if($user->role[1]->role_id != 4)
+                                <a href="{{ route('admin.clients.create') }}" class="btn btn-outline btn-success btn-sm">@lang('modules.client.addNewClient') <i class="fa fa-plus" aria-hidden="true"></i></a>
+                            @endif
                             <a href="javascript:;" id="toggle-filter" class="btn btn-outline btn-danger btn-sm toggle-filter"><i
                                         class="fa fa-sliders"></i> @lang('app.filterResults')</a>
                         </div>
